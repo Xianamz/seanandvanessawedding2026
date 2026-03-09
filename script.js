@@ -4,62 +4,57 @@
 const weddingDate = new Date("May 16, 2026 15:00:00").getTime();
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHISoEwWmi2WdkAE1CZ26nBSHMTtD8jR80YjPAAO3X_nr4eN_wmsNZTsCkzj4fldDNlQ/exec";
 
+// CLEANED GUEST LIST (Removed accidental leading/trailing spaces)
 const guestList = [
-    "Sean Angelo Zaquita", "Ma. Vanessa Quiano", 
-    "Gina Mepieza", "Ronnie Zaquita", "Ruel Jubay","Andie Cienne Zaquita", 
-    "Xahliah Angela Jubay", "Jhon David Cos", "Jennylyn Monzon", "Gemma Dilao",
-    "Jerry Mepieza", "Flordelita Mepieza", "Darna Mepieza", "Jocelyn Pateño", 
-    "Josephine Mangaoang","Edward Mangaoang", "Janus Mangaoang", "Ron Xyrelle Zaquita", 
-    "Yvette Quenee Franco", "Evelyn Mangubat",
-    " Jovyl Cayme", "Mark Joshua Mepieza", " Jennylyn Monzon", "Jannel Mepieza", " Ma. Jodilyn Pateño",
-    " Danica Pateño", " Anthony Jere Mepieza", " Joven Dilao", " Jeric Mepieza", "Jaybe Monzon",
-    " Christian Paul Zaquita", " Teresita Franco", " Eduardo Franco", " Leonilo Poleño", " Nora Poleño",
-    " Reynaldo Panal", " Mary Grace Poleño", " Abegail Soriano", " Evelyn Dolar", "Josefine Udan",
-    " Jonathan Bardiago Evangelista", " Baby Catalo", " Grace Vidal", " Seankim Vidal", " Daichi Matsushiro",
-    " Christian Cabrera", " Jemmanh Moron", " Renil Poyaoan", " Cedrick Orfano", "Reieniel Ocampo",
-    " Charlie Reontoy", " Rose Ann Reontoy", "Emma Tiu", "Wilfredo Mapalo", "Dr. David Pinto",
-    "Jacqueline Fermil", "Sonia Endaya", "Eduardo Endaya", "Dr. Jazmine Endaya", " Francisco Aure De Jesus III",
-    " Emmanuel Caturla", " Iris Caturla", " Filip Caturla", "Gladys Taningco", "Jayson Ryan Toledo",
-    "Angelica Gamo Toledo", " Ronald Sambilad", " Genelyn Sambilad", " Isagani Orbita", " Eliza Pallet",
-    " Jessa Mondido", " Armin Licuanan", " Joshua Angelo Aguila", " John David Cruz", " Brenda lyn Balucas",
-    " Randolph Ruga", " Jefferson Wissen Dela Cruz", " Roel Calderon", " Nelson Garcia", " Eunice Esguerra",
-    " Richard Malapitan", " Nelen Pelayo", "Raulito Adorias", "Analor Mepieza", "Woodrow Dela Cruz Villarante",
+    "Sean Angelo Zaquita", "Ma. Vanessa Quiano", "Gina Mepieza", "Ronnie Zaquita", "Ruel Jubay",
+    "Andie Cienne Zaquita", "Xahliah Angela Jubay", "Jhon David Cos", "Jennylyn Monzon", "Gemma Dilao",
+    "Jerry Mepieza", "Flordelita Mepieza", "Darna Mepieza", "Jocelyn Pateño", "Josephine Mangaoang",
+    "Edward Mangaoang", "Janus Mangaoang", "Ron Xyrelle Zaquita", "Yvette Quenee Franco", "Evelyn Mangubat",
+    "Jovyl Cayme", "Mark Joshua Mepieza", "Jennylyn Monzon", "Jannel Mepieza", "Ma. Jodilyn Pateño",
+    "Danica Pateño", "Anthony Jere Mepieza", "Joven Dilao", "Jeric Mepieza", "Jaybe Monzon",
+    "Christian Paul Zaquita", "Teresita Franco", "Eduardo Franco", "Leonilo Poleño", "Nora Poleño",
+    "Reynaldo Panal", "Mary Grace Poleño", "Abegail Soriano", "Evelyn Dolar", "Josefine Udan",
+    "Jonathan Bardiago Evangelista", "Baby Catalo", "Grace Vidal", "Seankim Vidal", "Daichi Matsushiro",
+    "Christian Cabrera", "Jemmanh Moron", "Renil Poyaoan", "Cedrick Orfano", "Reieniel Ocampo",
+    "Charlie Reontoy", "Rose Ann Reontoy", "Emma Tiu", "Wilfredo Mapalo", "Dr. David Pinto",
+    "Jacqueline Fermil", "Sonia Endaya", "Eduardo Endaya", "Dr. Jazmine Endaya", "Francisco Aure De Jesus III",
+    "Emmanuel Caturla", "Iris Caturla", "Filip Caturla", "Gladys Taningco", "Jayson Ryan Toledo",
+    "Angelica Gamo Toledo", "Ronald Sambilad", "Genelyn Sambilad", "Isagani Orbita", "Eliza Pallet",
+    "Jessa Mondido", "Armin Licuanan", "Joshua Angelo Aguila", "John David Cruz", "Brenda lyn Balucas",
+    "Randolph Ruga", "Jefferson Wissen Dela Cruz", "Roel Calderon", "Nelson Garcia", "Eunice Esguerra",
+    "Richard Malapitan", "Nelen Pelayo", "Raulito Adorias", "Analor Mepieza", "Woodrow Dela Cruz Villarante",
     "Virginia Galvez", "Mauro Reniedo", "Jocelyn Alafriz", "Woodrow Villarante", "Rowginald Villarante",
     "Whenierose Maduro", "Merlin District", "Poljan Capitis", "Seo Reuy Castro", "May Mahusay",
     "Rowell Mahusay", "Alexandra Cuanico", "Marco Salting", "Thea Andrea Salting", "Nancy Villorente",
     "Melissa Obieta", "Anna Dela Cruz", "Loise Ponciano", "Carlo Perez", "Jeriel John Cabo",
-    "Roger Quiano ", "Eleanor Quiano ", "Maria Rogerlene Quiano ", "Ma. Eloisa Torrecampo ", "Aaron Torrecampo",
-    "John Jomari Garcia", "Apol Garcia ", "Ariel Garcia", "Geralyn Mercado ", "John Vergel Legaspi ",
-    "Anthony Hernandez ", "Alma Hernandez ", "Erika Hernandez ", "Abigail Antolin", "Victor Arquero",
+    "Roger Quiano", "Eleanor Quiano", "Maria Rogerlene Quiano", "Ma. Eloisa Torrecampo", "Aaron Torrecampo",
+    "John Jomari Garcia", "Apol Garcia", "Ariel Garcia", "Geralyn Mercado", "John Vergel Legaspi",
+    "Anthony Hernandez", "Alma Hernandez", "Erika Hernandez", "Abigail Antolin", "Victor Archer",
     "Maricel Hernandez", "Georgina Daculan", "Ronald Quintos", "Luisa Berongoy", "Federico Taguiam",
-    "Emmanuel Hernandez", "Wilma C. Trinidad ", "Emmanuel Murillo", "Jennifer Ortega ", "Jayson Aguirre",
-    "Genette Aguirre", "Zane Matthew Aguirre", "Zak Mikelle Aguirre", "Gerardo Dapigran", "Marjenel Hernandez ",
-    "Myla Ocaña ", "Mcroi Aguirre", "Erica Chastine Adajar", "Grace Baniqued ", "Joland Baniqued",
+    "Emmanuel Hernandez", "Wilma C. Trinidad", "Emmanuel Murillo", "Jennifer Ortega", "Jayson Aguirre",
+    "Genette Aguirre", "Zane Matthew Aguirre", "Zak Mikelle Aguirre", "Gerardo Dapigran", "Marjenel Hernandez",
+    "Myla Ocaña", "Mcroi Aguirre", "Erica Chastine Adajar", "Grace Baniqued", "Joland Baniqued",
     "Blenda Pokan", "Trixia Mae Ombrog", "Ramilyn Mariano", "Johanz Mariano", "Lhady Veronica Anne Escudero",
-    "Maria Victoria Escudero", "Rosemarie Dilao ", "Gilboy Dilao ", "Melody Fame Cuyahon", "Edlalyn Sualog",
-    "Mary Jane Benavidez ", "Jalieson Asis", "Hazel Joy Padilla", "Jonelyn Aquino", "Reechel Mirano",
+    "Maria Victoria Escudero", "Rosemarie Dilao", "Gilboy Dilao", "Melody Fame Cuyahon", "Edlalyn Sualog",
+    "Mary Jane Benavidez", "Jalieson Asis", "Hazel Joy Padilla", "Jonelyn Aquino", "Reechel Mirano",
     "Marietta Ramos", "Margie Sacopla", "Ferdinand Sacopla", "Lovella Agaton", "Annaliza Hipolito",
     "Esmer Hipolito", "Rolando Bagro", "Ronel Verdida", "Ma. Prima Regalario", "Vincent Regalario",
     "Margie Champlon", "Marilyn Cepe", "Jerson Quiano", "Janice Cepe", "Glen Emmanuel Champlon",
     "Glen Champlon", "Moyra Mayor", "Charlene Casia", "Miriam Lambo Bermudez", "Jose Hernandez Bermudez Jr.",
-    "Analy Jison", "Joseph Villamor", "Charlene Caja", "Janette Pantig", "Lea Abigal Pantig ",
-    "Nyoky Hierco ", "John Paul Sister", "Erma Cuerda", "Cornelio Ambulo", "Evelyn Ambulo",
+    "Analy Jison", "Joseph Villamor", "Charlene Caja", "Janette Pantig", "Lea Abigal Pantig",
+    "Nyoky Hierco", "John Paul Sister", "Erma Cuerda", "Cornelio Ambulo", "Evelyn Ambulo",
     "Carlo Cunanan", "Valen Cunanan", "Mark Joseph Villamar", "Jessica Poquiz", "Ma. Monica Modestano",
-    "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay ", "Ghie An Mercado",
+    "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado",
     "Charles Michael Poja", "Ryan Jolampong", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre",
     "Francis Rosanes Jr", "Onel Hernandez", "Andrea Policarpio", "Khaila Racelis", "Bryan Jimenez",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", "Jan Ellesse Senen", 
     "Sheryl Lou Apuhin", "Arsenio Nastor", "Marlon Flores", "Charelyn Mullaneda", "Jeffrey Gaden"
 ];
 
-// Global elements
 const bgMusic = document.getElementById('bgMusic');
 const musicBtn = document.getElementById('music-control');
 const scrollToTopBtn = document.getElementById("scrollToTop");
 
-/**
- * Site Entry & Browser Detection
- */
 function handleEntry() {
     const ua = navigator.userAgent || navigator.vendor || window.opera;
     const isMessenger = /FBAN|FBAV|Messenger/i.test(ua);
@@ -81,12 +76,9 @@ function handleEntry() {
 function startSite() {
     const overlay = document.getElementById('overlay');
     document.body.classList.remove('locked');
-    
-    // Transition overlay
     overlay.style.transform = 'translateY(-100%)';
     overlay.style.opacity = '0';
 
-    // Play music
     if (bgMusic) {
         bgMusic.play().catch(() => console.log("Music waiting for interaction."));
         if (musicBtn) musicBtn.classList.add('playing');
@@ -98,9 +90,6 @@ function startSite() {
     }, 1200);
 }
 
-/**
- * RSVP Logic
- */
 async function validateRSVP() {
     const firstName = document.getElementById('firstName').value.trim();
     const lastName = document.getElementById('lastName').value.trim();
@@ -114,17 +103,15 @@ async function validateRSVP() {
     const loadingContainer = document.getElementById('rsvp-loading');
     const thankYouMsg = document.getElementById('thank-you-msg');
 
-    // Basic Validation
     if (!firstName || !lastName || !email) {
         alert("Please fill in First Name, Last Name, and Email.");
         return;
     }
 
-    // Guest List Check
+    // Checking guest list (added trim to the guest list items just in case)
     const isInvited = guestList.some(guest => guest.trim().toLowerCase() === fullName.toLowerCase());
     
     if (!isInvited) {
-        // Show the specific "Contact the couple" message from your HTML
         if(errorDisplay) {
             errorDisplay.style.display = 'block';
             errorDisplay.scrollIntoView({ behavior: 'smooth' });
@@ -134,7 +121,6 @@ async function validateRSVP() {
         return;
     }
 
-    // If invited, proceed to submit
     if(errorDisplay) errorDisplay.style.display = 'none';
     formContainer.style.display = 'none';
     loadingContainer.style.display = 'flex';
@@ -164,9 +150,6 @@ async function validateRSVP() {
     }
 }
 
-/**
- * UI Helpers & Effects
- */
 function formatName(input) {
     input.value = input.value.split(' ')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
@@ -183,26 +166,7 @@ function toggleMusic() {
     }
 }
 
-function copyText(elementId) {
-    const textToCopy = document.getElementById(elementId).innerText;
-    const btn = event.target;
-
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        const originalText = btn.innerText;
-        btn.innerText = "COPIED!";
-        btn.classList.add('copied');
-        setTimeout(() => {
-            btn.innerText = originalText;
-            btn.classList.remove('copied');
-        }, 2000);
-    });
-}
-
-/**
- * Initialization & Event Listeners
- */
 document.addEventListener("DOMContentLoaded", () => {
-    // Reveal Animations
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -213,9 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
 
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-    
 
-    // FAQ Accordion
     document.querySelectorAll('.faq-question').forEach(button => {
         button.addEventListener('click', () => {
             const faqItem = button.parentElement;
@@ -226,7 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Countdown Timer
     setInterval(() => {
         const distance = weddingDate - new Date().getTime();
         if (distance > 0) {
@@ -238,7 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
 });
 
-// Scroll to Top Logic
 window.onscroll = () => {
     if (scrollToTopBtn) {
         scrollToTopBtn.style.display = (window.scrollY > 400) ? "block" : "none";
