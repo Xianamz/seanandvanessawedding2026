@@ -15,7 +15,7 @@ const guestList = [
     "Christian Paul Zaquita", "Teresita Franco", "Eduardo Franco", "Leonilo Poleño", "Nora Poleño",
     "Reynaldo Panal", "Mary Grace Poleño", "Abegail Soriano", "Evelyn Dolar", "Josefine Udan",
     "Jonathan Bardiago Evangelista", "Baby Catalo", "Grace Vidal", "Seankim Vidal", "Daichi Matsushiro",
-    "Christian Cabrera", "Jemmanh Moron", "Renil Poyaoan", "Cedrick Orfano", "Reieniel Ocampo",
+    "Christian Cabrera", "Jemanh Moron", "Renil Poyaoan", "Cedrick Orfano", "Reieniel Ocampo",
     "Charlie Reontoy", "Rose Ann Reontoy", "Emma Tiu", "Wilfredo Mapalo", "Dr. David Pinto",
     "Jacqueline Fermil", "Sonia Endaya", "Eduardo Endaya", "Dr. Jazmine Endaya", "Francisco Aure De Jesus III",
     "Emmanuel Caturla", "Iris Caturla", "Filip Caturla", "Gladys Taningco", "Jayson Ryan Toledo",
@@ -208,3 +208,4 @@ window.onscroll = () => {
 if (scrollToTopBtn) {
     scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
