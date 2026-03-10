@@ -11,7 +11,7 @@ const guestList = [
     "Jerry Mepieza", "Flordelita Mepieza", "Darna Mepieza", "Jocelyn Pateño", "Josephine Mangaoang",
     "Edward Mangaoang", "Janus Mangaoang", "Ron Xyrelle Zaquita", "Yvette Quenee Franco", "Evelyn Mangubat",
     "Jovyl Cayme", "Mark Joshua Mepieza", "Jennylyn Monzon", "Jannel Mepieza", "Ma. Jodilyn Pateño",
-    "Danica Pateño", "Anthony Jere Mepieza", "Joven Dilao", "Jeric Mepieza", "Jaybe Monzon",
+    "Danica Pateño", "Anthony Jere Mepieza", "Joeven Christopher Dilao", "Jeric Mepieza", "Jaybe Monzon",
     "Christian Paul Zaquita", "Teresita Franco", "Eduardo Franco", "Leonilo Poleño", "Nora Poleño",
     "Reynaldo Panal", "Mary Grace Poleño", "Abegail Soriano", "Evelyn Dolar", "Josefine Udan",
     "Jonathan Bardiago Evangelista", "Baby Catalo", "Grace Vidal", "Seankim Vidal", "Daichi Matsushiro",
@@ -208,4 +208,5 @@ window.onscroll = () => {
 if (scrollToTopBtn) {
     scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 
