@@ -48,7 +48,7 @@ const guestList = [
     "Charles Michael Poja", "Ryan Jolampong", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre",
     "Francis Rosanes Jr", "Onel Hernandez", "Andrea Policarpio", "Khaila Racelis", "Bryan Jimenez",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", "Jan Ellesse Senen", 
-    "Sheryl Lou Apuhin", "Arsenio Nastor", "Marlon Flore", "Charelyn Mullaneda", "Jeffrey Gaden"
+    "Sheryl Lou Apuhin", "Arsenio Nastor", "Marlon Flore", "Charelyn Mullaneda", "Jeffrey Gaden", "Joemar Venus",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
