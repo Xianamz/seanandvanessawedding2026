@@ -935,52 +935,7 @@ select.rsvp-input {
     margin: 0;
 }
 
-/* Centralizing the Loading State & Thank You Message on Mobile */
-.loading-container, 
-#thank-you-msg {
-    position: fixed; /* Keep it centered even if the user scrolls */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10001; /* Higher than music controls and overlays */
-    background: rgba(255, 255, 255, 0.98);
-    padding: 40px 30px;
-    border-radius: 20px;
-    border: 1.5px solid var(--gold);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    width: 85%;
-    max-width: 400px;
-    text-align: center;
-    display: none; /* Controlled by JS */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-/* Specific animation for the "Sending" text */
-.loading-container p {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 2rem;
-    color: var(--balmoral-red);
-    margin: 0;
-    animation: pulseBlessing 1.5s infinite ease-in-out;
-}
-
-@keyframes pulseBlessing {
-    0% { opacity: 0.5; transform: scale(0.95); }
-    50% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0.5; transform: scale(0.95); }
-}
-
-/* Ensure the background blurs slightly when RSVP is processing */
-body.submitting::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    z-index: 10000;
-}
 
 /* Optional: Add a subtle pulse animation to the loading text */
 #rsvp-loading p {
