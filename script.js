@@ -150,8 +150,6 @@ async function validateRSVP() {
     }
 }
 
-
-
 function formatName(input) {
     input.value = input.value.split(' ')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
@@ -168,21 +166,7 @@ function toggleMusic() {
     }
 }
 
-    document.addEventListener("DOMContentLoaded", () => {
-    // --- ADD THIS BLOCK START ---
-    const firstNameInput = document.getElementById('firstName');
-    const lastNameInput = document.getElementById('lastName');
-
-    if (firstNameInput) {
-        firstNameInput.addEventListener('input', function() { formatName(this); });
-    }
-    if (lastNameInput) {
-        lastNameInput.addEventListener('input', function() { formatName(this); });
-    }
-    // --- ADD THIS BLOCK END ---
-
-    // ... rest of your existing revealObserver and countdown code ...
-});
+document.addEventListener("DOMContentLoaded", () => {
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

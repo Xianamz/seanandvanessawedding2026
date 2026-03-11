@@ -935,8 +935,6 @@ select.rsvp-input {
     margin: 0;
 }
 
-
-
 /* Optional: Add a subtle pulse animation to the loading text */
 #rsvp-loading p {
     animation: pulse 1.5s infinite ease-in-out;
