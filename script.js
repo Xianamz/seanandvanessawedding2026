@@ -7,7 +7,7 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHISoEwWmi2W
 // CLEANED GUEST LIST (Removed accidental leading/trailing spaces)
 const guestList = [
     "Sean Angelo Zaquita", "Ma. Vanessa Quiano", "Gina Mepieza", "Ronnie Zaquita", "Ruel Jubay",
-    "Andie Cienne Zaquita", "Xahliah Angela Jubay", "Jhon David Cos", "Jennylyn Monzon", "Gemma Dilao",
+    "Andie Cienne Zaquita", "Xahliah Angela Jubay", "Jhon David Cos", "Gemma Dilao",
     "Jerry Mepieza", "Flordelita Mepieza", "Darna Mepieza", "Jocelyn Pateño", "Josephine Mangaoang",
     "Edward Mangaoang", "Janus Mangaoang", "Ron Xyrelle Zaquita", "Yvette Quenee Franco", "Evelyn Mangubat",
     "Jovyl Cayme", "Mark Joshua Mepieza", "Jenny Lynn Monzon", "Jannel Mepieza", "Ma. Jodilyn Pateño",
