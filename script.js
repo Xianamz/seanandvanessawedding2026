@@ -113,22 +113,19 @@ async function validateRSVP() {
     if (!isInvited) {
         if(errorDisplay) {
             errorDisplay.style.display = 'block';
-            // We keep the scroll here because the guest needs to see the error 
-            // to correct their name in the form.
-            errorDisplay.scrollIntoView({ behavior: 'smooth' });
+            // We scroll slightly so the message appeared under the button is visible
+            errorDisplay.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
-            alert(`Sorry, "${fullName}" was not found on the guest list. Please contact the couple.`);
+            alert(`Sorry, "${fullName}" was not found on the guest list.`);
         }
         return;
     }
 
+    // If invited, proceed with submission
     if(errorDisplay) errorDisplay.style.display = 'none';
-
-    // 1. Hide form and lock screen with the submission overlay
+    
     formContainer.style.display = 'none';
     document.body.classList.add('submitting'); 
-    
-    // 2. Show loading (Fixed center via CSS)
     loadingContainer.style.display = 'flex';
 
     try {
@@ -144,14 +141,9 @@ async function validateRSVP() {
             })
         });
 
-        // 3. SUCCESS: Hide loading and show Thank You message
         loadingContainer.style.display = 'none';
-        
-        // Use 'flex' to ensure it uses the centering CSS we wrote earlier
+        // Show the centralized thank you message
         thankYouMsg.style.display = 'flex'; 
-        
-        // --- AUTO-SCROLL REMOVED ---
-        // the thankYouMsg is now 'fixed' in the center of the viewport via CSS
 
     } catch (error) {
         console.error('Error!', error.message);
