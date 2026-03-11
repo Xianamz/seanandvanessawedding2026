@@ -15,7 +15,7 @@ const guestList = [
     "Christian Paul Zaquita", "Teresita Franco", "Eduardo Franco", "Leonilo Poleño", "Nora Poleño",
     "Reynaldo Panal", "Mary Grace Poleño", "Abegail Soriano", "Evelyn Dolar", "Josefine Udan",
     "Jonathan Evangelista", "Baby Catalo", "Grace Vidal", "Seankim Vidal", "Daichi Matsushiro",
-    "Christian Cabrera", "Jemanh Moron", "Renil Poyaoan", "Cedrick Orfano", "Reieniel Ocampo",
+    "Christian Cabrera", "Jemanh Moron", "Renil Poyaoan", "King Cedrick Orfano", "Reieniel Ocampo",
     "Charlie Reontoy", "Rose Ann Reontoy", "Emma Tiu", "Wilfredo Mapalo", "Dr. David Pinto",
     "Jacqueline Fermil", "Sonia Endaya", "Eduardo Endaya", "Dr. Jazmine Endaya", "Francisco Aure De Jesus III",
     "Emmanuel Caturla", "Iris Caturla", "Filip Caturla", "Gladys Taningco", "Jayson Ryan Toledo",
@@ -166,7 +166,21 @@ function toggleMusic() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
+    // --- ADD THIS BLOCK START ---
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+
+    if (firstNameInput) {
+        firstNameInput.addEventListener('input', function() { formatName(this); });
+    }
+    if (lastNameInput) {
+        lastNameInput.addEventListener('input', function() { formatName(this); });
+    }
+    // --- ADD THIS BLOCK END ---
+
+    // ... rest of your existing revealObserver and countdown code ...
+});
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
