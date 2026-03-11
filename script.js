@@ -10,7 +10,7 @@ const guestList = [
     "Andie Cienne Zaquita", "Xahliah Angela Jubay", "Jhon David Cos", "Jennylyn Monzon", "Gemma Dilao",
     "Jerry Mepieza", "Flordelita Mepieza", "Darna Mepieza", "Jocelyn Pateño", "Josephine Mangaoang",
     "Edward Mangaoang", "Janus Mangaoang", "Ron Xyrelle Zaquita", "Yvette Quenee Franco", "Evelyn Mangubat",
-    "Jovyl Cayme", "Mark Joshua Mepieza", "Jennylyn Monzon", "Jannel Mepieza", "Ma. Jodilyn Pateño",
+    "Jovyl Cayme", "Mark Joshua Mepieza", "Jenny Lynn Monzon", "Jannel Mepieza", "Ma. Jodilyn Pateño",
     "Danica Pateño", "Anthony Jere Mepieza", "Joeven Christopher Dilao", "Jeric Mepieza", "Jaybe Monzon",
     "Christian Paul Zaquita", "Teresita Franco", "Eduardo Franco", "Leonilo Poleño", "Nora Poleño",
     "Reynaldo Panal", "Mary Grace Poleño", "Abegail Soriano", "Evelyn Dolar", "Josefine Udan",
@@ -208,5 +208,6 @@ window.onscroll = () => {
 if (scrollToTopBtn) {
     scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 
 
