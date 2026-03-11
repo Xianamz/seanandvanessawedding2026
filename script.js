@@ -167,6 +167,21 @@ function toggleMusic() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
+    // --- ADD THIS BLOCK START ---
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+
+    if (firstNameInput) {
+        firstNameInput.addEventListener('input', function() { formatName(this); });
+    }
+    if (lastNameInput) {
+        lastNameInput.addEventListener('input', function() { formatName(this); });
+    }
+    // --- ADD THIS BLOCK END ---
+
+    // ... rest of your existing revealObserver and countdown code ...
+});
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
