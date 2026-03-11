@@ -21,7 +21,7 @@ const guestList = [
     "Emmanuel Caturla", "Iris Caturla", "Filip Caturla", "Gladys Taningco", "Jayson Ryan Toledo",
     "Angelica Gamo Toledo", "Ronald Sambilad", "Genelyn Sambilad", "Isagani Orbita", "Eliza Pallet",
     "Jessa Mondido", "Armin Licuanan", "Joshua Angelo Aguila", "John David Cruz", "Brenda lyn Balucas",
-    "Randolph Ruga", "Jefferson Wissen Dela Cruz", "Roel Calderon", "Nelson Garcia", "Eunice Esguerra",
+    "Randolph Ruga", "Jefferson Wissen Dela Cruz", "Roel Calderon", "Nelson Garcia", "Eunice Katrina Esguerra",
     "Richard Malapitan", "Nelen Pelayo", "Raulito Adorias", "Analor Mepieza", "Woodrow Dela Cruz Villarante",
     "Virginia Galvez", "Mauro Reniedo", "Jocelyn Alafriz", "Woodrow Villarante", "Rowginald Villarante",
     "Whenierose Maduro", "Merlin District", "Poljan Capitis", "Seo Reuy Castro", "May Mahusay",
