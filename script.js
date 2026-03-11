@@ -171,6 +171,7 @@ function toggleMusic() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
     // --- ADD THIS BLOCK START ---
     const firstNameInput = document.getElementById('firstName');
     const lastNameInput = document.getElementById('lastName');
