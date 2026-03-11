@@ -150,38 +150,7 @@ async function validateRSVP() {
     }
 }
 
-// Example submission logic
-function handleRSVPSubmit(event) {
-    event.preventDefault();
-    
-    const form = document.getElementById('rsvp-form'); // Use your form ID
-    const loading = document.getElementById('rsvp-loading');
-    const thankYou = document.getElementById('thank-you-msg');
 
-    // 1. Hide the form and lock scrolling (optional)
-    form.style.display = 'none';
-    document.body.classList.add('submitting');
-    
-    // 2. Show the centralized loading container
-    loading.style.display = 'flex';
-
-    // 3. Send data to Google Script
-    fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        body: new FormData(form)
-    })
-    .then(response => {
-        // 4. Hide loading and show Thank You message
-        loading.style.display = 'none';
-        thankYou.style.display = 'flex';
-    })
-    .catch(error => {
-        console.error('Error!', error.message);
-        loading.style.display = 'none';
-        form.style.display = 'block';
-        alert("Something went wrong. Please try again.");
-    });
-}
 
 function formatName(input) {
     input.value = input.value.split(' ')
