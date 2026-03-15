@@ -49,7 +49,7 @@ const guestList = [
     "Francis Rosanes Jr", "Onel Hernandez", "Andrea Policarpio", "Khaila Racelis", "Bryan Jimenez",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", "Jan Ellesse Senen", 
     "Sheryl Lou Apuhin", "Arsenio Nastor", "Marlon Flore", "Charelyn Mullaneda", "Jeffrey Gaden", "Joemar Venus", 
-    "Justin Jules Posadas", "John David Quitlong", "Jasmine Aglugub",
+    "Justin Jules Posadas", "John David Quitlong", "Jasmine Aglugub","Ma. Teresa Salome Florentino", "Mariann Patricia Florentino",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
