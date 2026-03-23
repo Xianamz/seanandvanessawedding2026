@@ -18,7 +18,7 @@ const guestList = [
     "Christian Cabrera", "Jemanh Moron", "Renil Poyaoan", "King Cedrick Orfano", "Reieniel Ocampo",
     "Charlie Reontoy", "Rose Ann Reontoy", "Emma Tiu", "Wilfredo Mapalo", "David Pinto",
     "Jacqueline Fermil", "Sonia Endaya", "Eduardo Endaya", "Jazmine Endaya", "Francisco Aure De Jesus III",
-    "Emmanuel Caturla", "Iris Caturla", "Filip Caturla", "Gladys Taningco", "Jayson Ryan Toledo",
+    "Emmanuel Caturla", "Iris Caturla", "Filip Caturla", "Gladys Taningco", "Jason Ryan Toledo",
     "Angelica Gamo Toledo", "Ronald Sambilad", "Genelyn Sambilad",
     "Jessa Mondido", "Armin Licuanan", "Joshua Angelo Aguila", "John David Cruz", "Brenda lyn Balucas",
     "Randolph Ruga", "Roel Calderon", "Eunice Katrina Esguerra",
@@ -49,7 +49,7 @@ const guestList = [
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", 
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", 
     "Arsenio Nastor", "Joemar Venus",  "John David Quitlong",
-    "Ma. Teresa Salome Florentino", "Mariann Patricia Florentino",
+    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", 
 ];
 
 const bgMusic = document.getElementById('bgMusic');
