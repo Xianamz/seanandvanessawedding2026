@@ -346,7 +346,7 @@ body.locked { overflow: hidden; height: 100vh; }
 /* --- HERO SECTION --- */
 .hero { 
     height: 100vh; 
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('seanvanessa.jpg') center/cover; 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('tseanvanessa.jpg') center/cover; 
     /*https://t3.ftcdn.net/jpg/07/64/61/74/360_F_764617449_BdInheQjvZEnTBX7nV8zO3yyCcPi4Mh4.jpg*/
     display: flex; align-items: center; justify-content: center; color: white; 
     overflow: hidden;
