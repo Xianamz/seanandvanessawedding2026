@@ -48,8 +48,8 @@ const guestList = [
     "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre",
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", 
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", 
-    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong",
-    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", 
+    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Gilbert Crisostomo",
+    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
