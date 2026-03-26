@@ -1027,4 +1027,24 @@ select.rsvp-input {
 @media (min-width: 1024px) {
     .album-item { flex: 0 0 300px; }
     .album-wrapper-horizontal { justify-content: center; }
+}.hero-script {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2.2rem; /* Slightly larger for better readability */
+    color: #b5a489;    /* Muted Champagne Gold */
+    margin: 15px 0 5px 0;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    opacity: 0.85;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5); /* Adds a subtle lift */
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2.5rem, 8vw, 4rem); /* Responsive size */
+    color: #2c2c2c; /* Deep Charcoal for contrast */
+    letter-spacing: 5px;
+    margin-top: 0;
+    text-transform: uppercase;
 }
