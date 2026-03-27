@@ -50,7 +50,7 @@ const guestList = [
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", 
     "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Gilbert Crisostomo", "Richard Jay Gabalan",
     "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia",
-    "Herminia  Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia",
+    "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
