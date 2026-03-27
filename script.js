@@ -31,7 +31,7 @@ const guestList = [
     "John Jomari Garcia", "Apolonia Garcia", "Ariel Garcia", "Geralyn Mercado", "John Vergel Legaspi",
     "Anthony Hernandez", "Alma Hernandez", "Erika Hernandez", "Abigail Antolin", "Victor Archer",
     "Maricel Hernandez", "Georgina Daculan", "Ronald Quintos", "Luisa Berongoy", "Federico Taguiam",
-    "Emmanuel Hernandez", "Wilma C. Trinidad", "Emmanuel Murillo", "Jennifer Ortega", "Jayson Aguirre",
+    "Emmanuel Hernandez", "Wilma Trinidad", "Emmanuel Murillo", "Jennifer Ortega", "Jayson Aguirre",
     "Genette Aguirre", "Zane Matthew Aguirre", "Zak Mikelle Aguirre", "Gerardo Dapigran", "Marjenel Hernandez",
     "Myla Ocaña", "Mcroi Aguirre", "Erica Chastine Adajar", "Grace Baniqued", "Jolan Baniqued",
     "Blenda Pokan", "Trixia Mae Ombrog", "Ramilyn Mariano", "Johanz Mariano", "Lhady Veronica Anne Escudero",
