@@ -28,7 +28,7 @@ const guestList = [
     "Rowell Mahusay", "Alexandra Cuanico", "Marco Salting", "Thea Andrea Salting", "Nancy Villorente",
     "Melissa Obieta", "Anna Dela Cruz", "Loise Ponciano", "Carlo Perez", "Jeriel John Cabo",
     "Roger Quiano", "Eleanor Quiano", "Maria Rogerlene Quiano", "Ma. Eloisa Torrecampo", "Aaron Torrecampo",
-    "John Jomari Garcia", "Apol Garcia", "Ariel Garcia", "Geralyn Mercado", "John Vergel Legaspi",
+    "John Jomari Garcia", "Apolonia Garcia", "Ariel Garcia", "Geralyn Mercado", "John Vergel Legaspi",
     "Anthony Hernandez", "Alma Hernandez", "Erika Hernandez", "Abigail Antolin", "Victor Archer",
     "Maricel Hernandez", "Georgina Daculan", "Ronald Quintos", "Luisa Berongoy", "Federico Taguiam",
     "Emmanuel Hernandez", "Wilma C. Trinidad", "Emmanuel Murillo", "Jennifer Ortega", "Jayson Aguirre",
@@ -45,11 +45,12 @@ const guestList = [
     "Nyoky Hierco", "John Paul Sister", "Erma Cuerda", "Cornelio Ambulo", "Evelyn Ambulo",
     "Carlo Cunanan", "Valen Cunanan", "Mark Joseph Villamar", "Jessica Poquiz", "Ma. Monica Modestano",
     "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado",
-    "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre",
-    "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", 
+    "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre", "Ghie an Mercado",
+    "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", "Airjay Agulto",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", 
-    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Gilbert Crisostomo",
-    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla",
+    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Gilbert Crisostomo", "Richard Jay Gabalan",
+    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia",
+    "Herminia  Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
