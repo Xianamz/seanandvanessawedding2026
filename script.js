@@ -47,10 +47,10 @@ const guestList = [
     "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado",
     "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre", "Ghie an Mercado",
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", "Airjay Agulto",
-    "Carmela Agustin", "Darling opao", "Shelden Mesa", "Juan Mahusay", "Normi Mahusay", 
-    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Gilbert Crisostomo", "Richard Jay Gambalan",
+    "Carmela Agustin", "Darling opao", "Shelden Mesa", "Alejandro Laoag Jr", 
+    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Richard Jay Gambalan",
     "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia",
-    "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia",
+    "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia", "Jennifer Tenerife",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
