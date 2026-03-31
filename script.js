@@ -41,7 +41,7 @@ const guestList = [
     "Esmer Hipolito", "Rolando Bagro", "Ronel Verdida", "Ma. Prima Regalario", "Vincent Regalario",
     "Margie Champlon", "Marilyn Cepe", "Jerson Quiano", "Janice Cepe", "Glen Emmanuel Champlon",
     "Glen Champlon", "Moyra Mayor", "Charlene Casia", "Miriam Lambo Bermudez", "Jose Hernandez Bermudez Jr.",
-    "Analy Jison", "Joseph Villamor", "Charlene Caja", "Janette Pantig", "Lea Abbygail Pantig",
+    "Analy Jison", "Joseph Villamor", "Charlene Caja", "Janet Pantig", "Lea Abbygail Pantig",
     "Nyoky Hierco", "John Paul Sister", "Erma Cuerda", "Cornelio Ambulo", "Evelyn Ambulo",
     "Carlo Cunanan", "Valen Cunanan", "Mark Joseph Villamar", "Jessica Poquiz", "Ma. Monica Modestano",
     "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado",
