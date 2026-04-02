@@ -29,7 +29,7 @@ const guestList = [
     "Melissa Obieta", "Anna Dela Cruz", "Loise Ponciano", "Carlo Perez", "Jeriel John Cabo",
     "Roger Quiano", "Eleanor Quiano", "Maria Rogerlene Quiano", "Ma. Eloisa Torrecampo", "Aaron Torrecampo",
     "John Jomari Garcia", "Apolonia Garcia", "Ariel Garcia", "Geralyn Mercado", "John Vergel Legaspi",
-    "Anthony Hernandez", "Alma Hernandez", "Erika Hernandez", "Abigail Antolin", "Victor Archer",
+    "Anthony Hernandez", "Alma Hernandez", "Erika Hernandez", "Abigail Antolin", "Victor Arquero",
     "Maricel Hernandez", "Georgina Daculan", "Ronald Quintos", "Luisa Berongoy", "Federico Taguiam",
     "Emmanuel Hernandez", "Wilma Trinidad", "Emmanuel Murillo", "Jennifer Ortega", "Jayson Aguirre",
     "Genette Aguirre", "Zane Matthew Aguirre", "Zak Mikelle Aguirre", "Gerardo Dapigran", "Marjenel Hernandez",
@@ -48,7 +48,7 @@ const guestList = [
     "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre", "Ghie an Mercado",
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", "Airjay Agulto",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Alejandro Laoag Jr", "Ryan Gumban",
-    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Richard Jay Gambalan",
+    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Richard Jay Gambalan", "Mark Anthony Serrano"
     "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia",
     "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia", "Jennifer Tenerife",
 ];
