@@ -48,7 +48,7 @@ const guestList = [
     "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre", "Ghie an Mercado",
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", "Airjay Agulto",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Alejandro Laoag Jr", "Ryan Gumban",
-    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Richard Jay Gambalan", "Mark Anthony Serrano"
+    "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Richard Jay Gambalan", "Mark Anthony Serrano",
     "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia",
     "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia", "Jennifer Tenerife",
 ];
