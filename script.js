@@ -24,7 +24,7 @@ const guestList = [
     "Randolph Ruga", "Roel Calderon", "Eunice Katrina Esguerra",
     "Richard Malapitan", "Nelen Pelayo", "Raulito Adorias", "Analor Mepieza", "Woodrow Dela Cruz Villarante",
     "Virginia Galvez", "Mauro Reniedo", "Jocelyn Alafriz", "Woodrow Villarante", "Rowginald Villarante",
-    "Whenierose Maduro", "Merlin District", "Poljan Capitis", "Seo Reuy Castro",
+    "Whenierose Maduro", "Merlin Discipulo", "Poljan Capitis", "Seo Reuy Castro",
     "Alexandra Cuanico", "Thea Andrea Salting", "Nancy Villorente",
     "Melissa Obieta", "Anna Dela Cruz", "Loise Ponciano", "Carlo Perez", "Jeriel John Cabo",
     "Roger Quiano", "Eleanor Quiano", "Maria Rogerlene Quiano", "Ma. Eloisa Torrecampo", "Aaron Torrecampo",
