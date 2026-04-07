@@ -99,6 +99,34 @@
     </div>
 </section>
   
+<section class="section video-section reveal">
+    <div class="container">
+        <h2 class="section-title">Our Story in Motion</h2>
+        
+     <div class="video-frame-container">
+    <video id="weddingVideo" playsinline loop preload="metadata">
+        <source src="MicrosoftTeams-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-controls">
+        <button id="playPauseBtn" class="control-btn">▶</button>
+        
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        
+        <div class="time-display">
+            <span id="videoTime">0:00</span>
+        </div>
+
+        <button id="videoMuteBtn" class="control-btn">🔊</button>
+    </div>
+</div>
+        
+        <p class="video-caption">May 16, 2026 • Save the Date</p>
+    </div>
+</section>
+  
     <section class="section white-bg section-border">
         <h2 class="section-title reveal">The Ceremony & Reception</h2>
         <div class="horizontal-venue-container reveal">
@@ -261,6 +289,32 @@
         </div>
     </div>
 </section>
+  
+  <section class="section white-bg section-border registry-section reveal">
+    <div class="reveal" style="max-width: 700px; margin: 0 auto; text-align: center; padding: 40px 20px;">
+        <h2 class="section-title">A Note on Gifting</h2>
+        
+        <div class="registry-message-container">
+            <div class="ornament-elegant" style="margin-bottom: 20px;">
+                <span class="line"></span>
+                <i class="leaf-icon">❀</i>
+                <span class="line"></span>
+            </div>
+            
+            <p class="registry-text-main">
+                Your presence means the most. For anyone considering a gift, small, practical, or monetary tokens are warmly welcomed, while appliances are kindly discouraged.
+            </p>
+            
+            <p class="registry-signature">Thank you 🤍</p>
+
+            <div class="ornament-elegant" style="margin-top: 20px;">
+                <span class="line"></span>
+                <i class="leaf-icon">❀</i>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="reveal" style="max-width: 1000px; margin: 60px auto;">
     <div class="ornament-elegant">
@@ -338,6 +392,97 @@
         </div>
     </div>
 </section>
+  
+ <section class="section white-bg section-border table-finder-section reveal">
+    <div class="reveal">
+        <h2 class="section-title">Find Your Table</h2>
+        
+        <div id="table-search-controls">
+            <p class="table-finder-desc">Enter your name below to see your assigned seating.</p>
+            <div class="table-search-container">
+                <div class="rsvp-grid" style="margin-bottom: 20px;">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="tableFirstName" class="rsvp-input" placeholder="First Name">
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="tableLastName" class="rsvp-input" placeholder="Last Name">
+                    </div>
+                </div>
+                <button id="table-search-btn" class="submit-btn" onclick="findMyTable()">SEARCH TABLE</button>
+            </div>
+        </div>
+
+        <div id="table-loading" style="display: none; flex-direction: column; align-items: center; margin-top: 30px;">
+            <div class="table-spinner"></div>
+            <p style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; margin-top: 10px; color: #666;">Searching Guest List...</p>
+        </div>
+
+        <div id="table-result-box" class="fade-in-element" style="display: none; margin-top: 30px;">
+            <div class="table-card glass-effect">
+                <p class="guest-name-display" id="displayGuestName" style="font-weight: 700; color: #ab4e2f;"></p>
+                <h3 class="table-number-display" id="displayTableNumber" style="font-size: 2rem; margin: 10px 0;"></h3>
+                <hr style="width: 50px; border: 0; border-top: 1px solid #ccc; margin: 15px auto;">
+                <p class="table-note">We look forward to seeing you!</p>
+                
+                <a href="javascript:void(0)" class="reset-rsvp-link" onclick="resetTableSearch()" style="display: block; margin-top: 15px; font-size: 0.8rem;">Search another name?</a>
+            </div>
+        </div>
+
+        <div id="table-not-found" style="display: none; color: #ab4e2f; margin-top: 20px; font-weight: 600; text-align: center;">
+            <p>Name not found. Please ensure the spelling matches your invitation.</p>
+            <a href="javascript:void(0)" class="reset-rsvp-link" onclick="resetTableSearch()" style="display: block; margin-top: 10px;">Try again</a>
+        </div>
+    </div>
+</section>
+  
+  <section class="section white-bg section-border reminders-section reveal">
+    <div class="reveal">
+        <h2 class="section-title">Gentle Reminders</h2>
+        
+        <div class="reminders-grid">
+            <div class="reminder-card glass-effect">
+                <div class="reminder-icon">💻</div>
+                <h4>RSVP and Guest Validation</h4>
+                <p>Please enter your name exactly as it appears on your invitation when using the RSVP portal. Our system uses a master list to verify and confirm your seat for both the ceremony and the reception.</p>
+            </div>
+
+            <div class="reminder-card glass-effect">
+                <div class="reminder-icon">⌛</div>
+                <h4>Punctuality</h4>
+                <p>The ceremony will begin promptly at the scheduled time. We recommend arriving at the venue at least 30 minutes to 1 Hour early to find your seat and get comfortable before the music starts.</p>
+            </div>
+
+            <div class="reminder-card glass-effect">
+                <div class="reminder-icon">🥪</div>
+                <h4>Meal Schedule and Preparation</h4>
+                <p>Since dinner will be served later in the evening following the ceremony and cocktail hour, we recommend having a light snack or meal before you arrive. We want to ensure you stay energized and comfortable until the main dinner service begins!</p>
+            </div>
+                      <div class="reminder-card glass-effect">
+                <div class="reminder-icon">👗</div>
+                <h4>Dress Code</h4>
+                <p>We invite you to join our aesthetic theme by wearing Terracota Colors as you may see the colors above.</p>
+            </div>
+                      <div class="reminder-card glass-effect">
+                <div class="reminder-icon">📴</div>
+                <h4>Unplugged Ceremony</h4>
+                <p>We want to see your faces, not your phones! Please keep all devices silenced and put away during the ceremony. We have professional photographers to capture these special moments, and we look forward to sharing those photos with you later.</p>
+            </div>
+                      <div class="reminder-card glass-effect">
+                <div class="reminder-icon">🥗</div>
+                <h4>Dietary Requirements</h4>
+                <p>Your health is a priority. Please indicate any specific food allergies or dietary restrictions (such as vegetarian or gluten-free) in your RSVP so we can coordinate with our catering team.</p>
+            </div>
+                         <div class="reminder-card glass-effect">
+                <div class="reminder-icon">📍</div>
+                <h4>Location and Parking</h4>
+                <p>Detailed directions and a Google Maps pin are available on our website. Please check these in advance to account for travel time and to locate the designated parking areas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+  
     <section class="section white-bg section-border faq-section reveal">
         <div class="reveal">
             <h2 class="section-title">Commonly Asked Questions</h2>
