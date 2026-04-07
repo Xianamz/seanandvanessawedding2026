@@ -467,7 +467,7 @@ const tableData = {
 "Reynaldo Panal":"Table 12",
 "Mary Grace Poleño":"Table 12",
 "Josefine Udan":"Table 12",
-"Evangeline Estralla":"Table 12",
+"Evangeline Estrella":"Table 12",
 "Woodrow Villarante":"Table 12",
 "Rowginald Villarante":"Table 12",
 "Whenierose Maduro":"Table 12",
