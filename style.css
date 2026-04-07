@@ -346,8 +346,7 @@ body.locked { overflow: hidden; height: 100vh; }
 /* --- HERO SECTION --- */
 .hero { 
     height: 100vh; 
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://w0.peakpx.com/wallpaper/287/556/HD-wallpaper-wedding-background-abstract-wedding.jpg') center/cover; 
-    /*https://t3.ftcdn.net/jpg/07/64/61/74/360_F_764617449_BdInheQjvZEnTBX7nV8zO3yyCcPi4Mh4.jpg*/
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://t3.ftcdn.net/jpg/07/64/61/74/360_F_764617449_BdInheQjvZEnTBX7nV8zO3yyCcPi4Mh4.jpg') center/cover; 
     display: flex; align-items: center; justify-content: center; color: white; 
     overflow: hidden;
 }
@@ -1027,24 +1026,404 @@ select.rsvp-input {
 @media (min-width: 1024px) {
     .album-item { flex: 0 0 300px; }
     .album-wrapper-horizontal { justify-content: center; }
-}.hero-script {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 2.2rem; /* Slightly larger for better readability */
-    color: #b5a489;    /* Muted Champagne Gold */
-    margin: 15px 0 5px 0;
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    text-transform: lowercase;
-    opacity: 0.85;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.5); /* Adds a subtle lift */
 }
 
-.main-title {
-    font-family: 'Cinzel', serif;
-    font-size: clamp(2.5rem, 8vw, 4rem); /* Responsive size */
-    color: #2c2c2c; /* Deep Charcoal for contrast */
-    letter-spacing: 5px;
-    margin-top: 0;
+.table-search-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.table-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #d4af37;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.guest-name-display {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.table-number-display {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #ab4e2f;
+    margin: 10px 0;
+}
+
+.table-note {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Table Finder Loading Spinner */
+.table-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(171, 78, 47, 0.1);
+    border-top: 3px solid #ab4e2f; /* Your Terracotta Color */
+    border-radius: 50%;
+    animation: spin-table 0.8s linear infinite;
+}
+
+@keyframes spin-table {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Optional: Fade-in animation for the result card (TABLE FINDER)*/
+#table-result-box.active {
+    display: block !important;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.table-finder-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;            /* Slightly larger */
+    font-weight: 600;           /* Bolder weight */
+    letter-spacing: 1.5px;      
+    text-transform: uppercase;  
+    color: #444;                /* Darker grey for better contrast */
+    margin-bottom: 35px;        
+    line-height: 1.6;           
+    text-align: center;
+}
+
+/* Optional: Make the input text bold as well for consistency (TABLE FINDER) */
+#tableSearchInput {
+    font-weight: 600;
+    text-align: center;
+}
+
+.registry-message-container {
+    padding: 20px;
+}
+
+.registry-text-main {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+}
+
+.registry-signature {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+    color: #ab4e2f;
+    margin-top: 25px;
+}
+
+/* Optional: Adds a slight emphasis to the message */
+.registry-section .section-title {
+    margin-bottom: 30px;
+}
+
+/* Fade-in Transition Logic */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-element.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling for the reset links to match your theme */
+.reset-rsvp-link {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.reset-rsvp-link:hover {
+    color: #ab4e2f;
+}
+
+/*Reminders Section*/
+.reminders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.reminder-card {
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(171, 78, 47, 0.15);
+    transition: all 0.4s ease;
+}
+
+.reminder-card:hover {
+    transform: translateY(-10px);
+    border-color: #ab4e2f;
+}
+
+.reminder-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.reminder-card h4 {
+    font-family: 'Cinzel', serif;
+    color: #ab4e2f;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.reminder-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 300;
+}
+.reminder-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;       /* Slightly larger for readability */
+    line-height: 1.6;
+    color: #222;           /* Darker color for higher contrast */
+    font-weight: 600;      /* Semi-bold weight */
+    margin: 0;
+    letter-spacing: 0.2px; /* Improves clarity for bold text */
+}
+
+/* Optional: Make the titles even more prominent to match */
+.reminder-card h4 {
+    font-family: 'Cinzel', serif;
+    color: #ab4e2f;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;      /* Bold Cinzel title */
+}
+
+/* Video Section Styling */
+.video-section {
+    padding: 60px 20px;
+    background-color: #fdfcfb; /* Soft cream background */
+}
+
+/* Adaptive Video Container */
+.video-frame-container {
+    max-width: 900px; /* Max width for desktop */
+    width: 95%;      /* Responsive width for mobile */
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;   /* The "Inner Frame" */
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5d1b8; /* Earth tone border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Secondary decorative border */
+.video-frame-container::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid #ab4e2f; /* Terracotta accent */
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+#weddingVideo {
+    width: 100%;
+    height: auto;     /* Height adjusts based on video aspect ratio */
+    max-height: 80vh; /* Prevents portrait videos from being taller than the screen */
+    display: block;
+    object-fit: contain; /* Ensures the whole video is visible without cropping */
+    background: #000;    /* Adds black bars inside the frame if ratio is odd */
+}
+
+/* Mobile specific tweaks */
+@media (max-width: 768px) {
+    .video-frame-container {
+        width: 90%;
+        padding: 5px;
+    }
+}
+
+#weddingVideo:hover {
+    filter: sepia(0%) contrast(100%);
+}
+
+.video-caption {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+    color: #ab4e2f;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#weddingVideo {
+    position: relative;
+    z-index: 10; /* Ensures the video is on top */
+    pointer-events: auto;
+}
+
+.video-frame-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #d4af37; /* Gold border */
+    overflow: hidden;
+    background: #000;
+}
+
+#weddingVideo {
+    width: 100%;
+    display: block;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-frame-container:hover .video-controls {
+    opacity: 1;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.progress-container {
+    flex-grow: 1;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #ab4e2f; /* Matching your Terracotta theme */
+    width: 0%;
+}
+
+.time-display {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    min-width: 40px;
+}
+
+/* Container for the video and the UI */
+.video-frame-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    background: #000;
+    border: 1px solid #ab4e2f; /* Terracotta border */
+    overflow: hidden;
+    line-height: 0; /* Removes extra bottom spacing */
+}
+
+#weddingVideo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* The Control Bar */
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    
+    /* Change opacity to 1 if you want them ALWAYS visible */
+    opacity: 1; 
+}
+
+/* UI Elements Styling */
+.control-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    min-width: 30px;
+}
+
+.progress-container {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #ab4e2f; /* Terracotta progress */
+    border-radius: 3px;
+    transition: width 0.1s linear;
+}
+
+.time-display {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    min-width: 45px;
 }
