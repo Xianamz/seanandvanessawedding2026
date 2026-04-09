@@ -13,7 +13,7 @@ const guestList = [
     "Jovyl Cayme", "Mark Joshua Mepieza", "Jenny Lynn Monzon", "Jannel Mepieza", "Ma. Jodilyn Pateño",
     "Danica Pateño", "Anthony Jere Mepieza", "Joeven Christopher Dilao", "Jeric Mepieza", "Jaybe Monzon",
     "Christian Paul Zaquita", "Teresita Franco", "Eduardo Franco", "Leonilo Poleño", "Nora Poleño",
-    "Reynaldo Panal", "Mary Grace Poleño", "Evelyn Dolar", "Josefine Udan",
+    "Reynaldo Panal", "Mary Grace Poleño", "Evelyn Dolar", "Josefine Udan", "Gloria Cruz", "Ruby Grace Flores",
     "Jonathan Evangelista", "Grace Vidal", "Seankim Vidal", "Daichi Matsushiro",
     "Christian Cabrera", "Jemanh Moron", "Renil Poyaoan", "King Cedrick Orfano", "Reieniel Ocampo",
     "Charlie Reontoy", "Rose Ann Reontoy", "Emma Tiu", "Wilfredo Mapalo", "David Pinto",
