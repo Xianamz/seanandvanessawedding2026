@@ -44,7 +44,7 @@ const guestList = [
     "Analy Jison", "Joseph Villamor", "Charlene Caja", "Janet Pantig", "Lea Abbygail Pantig",
     "Nyoky Hierco", "John Paul Sister", "Erma Cuerda", "Cornelio Ambulo", "Evelyn Ambulo", "Mary May Acutillar",
     "Carlo Cunanan", "Valen Cunanan", "Mark Joseph Villamar", "Jessica Poquiz", "Ma. Monica Modestano",
-    "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado", "Francis Arjie Galvez"
+    "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado", "Francis Arjie Galvez",
     "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre", "Ghie an Mercado", "Christelle Enriquez",
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", "Airjay Agulto",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Alejandro Laoag Jr", "Ryan Gumban", "Genesis Tagle", 
