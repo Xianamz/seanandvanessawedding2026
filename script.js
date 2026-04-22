@@ -44,13 +44,13 @@ const guestList = [
     "Analy Jison", "Joseph Villamor", "Charlene Caja", "Janet Pantig", "Lea Abbygail Pantig",
     "Nyoky Hierco", "John Paul Sister", "Erma Cuerda", "Cornelio Ambulo", "Evelyn Ambulo", "Mary May Acutillar",
     "Carlo Cunanan", "Valen Cunanan", "Mark Joseph Villamar", "Jessica Poquiz", "Ma. Monica Modestano",
-    "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado",
+    "Elma Sotto", "Emerson Arboleda", "Felix Villanueva", "Annalyne Alay-ay", "Ghie An Mercado", "Francis Arjie Galvez"
     "Miksy Poja", "Hamid Sabuddin", "Kristoffer Ivan Paz", "Anson Aguirre", "Ghie an Mercado", "Christelle Enriquez",
     "Francis Rosanes Jr", "Andrea Policarpio", "Faye Irish Ogbac", "Lawrence Ogbac", "Airjay Agulto",
     "Carmela Agustin", "Darling opao", "Shelden Mesa", "Alejandro Laoag Jr", "Ryan Gumban", "Genesis Tagle", 
     "Arsenio Nastor", "Joemar Venus",  "John David Quitlong", "Richard Jay Gambalan", "Mark Anthony Serrano",
-    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia",
-    "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia", "Jennifer Tenerife",
+    "Ma. Teresa Salome Florentino", "Bianca Therese Florentino", "Evangeline Estralla", "Melanie Rebadomia", "Annabelle Aguirre",
+    "Herminia Rebadomia", "Liwayway Rebadomia", "Mary Ic Escullar", "May Ann Rebadomia", "Jennifer Tenerife", "Andrew Taningco",
 ];
 
 const bgMusic = document.getElementById('bgMusic');
@@ -292,8 +292,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Table Data Mapping
 const tableData = {
-    "Sean Angelo Zaquita": "Special Seat",
-    "Ma. Vanessa Quiano": "Special Seat",
+"Sean Angelo Zaquita": "Special Seat",
+"Ma. Vanessa Quiano": "Special Seat",
 "David Pinto":"VIP 1",
 "Jacqueline Fermil":"VIP 1",
 "Virginia Galvez":"VIP 1",
@@ -437,7 +437,7 @@ const tableData = {
 "Jannel Mepieza":"Table 9",
 "Anthony Jere Mepieza":"Table 9",
 "Jaybe Monzon":"Table 9",
-  "Grace Baniqued ":"Table 10",
+"Grace Baniqued ":"Table 10",
 "Joland Baniqued":"Table 10",
 "Moyra Mayor":"Table 10",
 "Charlene Casia":"Table 10",
@@ -487,7 +487,7 @@ const tableData = {
 "Ma. Prima Regalario":"Table 14",
 "Vincent Regalario":"Table 14",
 "Wilma C. Trinidad ":"Table 14",
-"Emmanuel Murillo🚘":"Table 14",
+"Emmanuel Murillo":"Table 14",
 "Trixia Mae Ombrog":"Table 14",
 "Kristoffer Ivan Paz":"Table 14",
 "Abigail Antolin":"Table 14",
